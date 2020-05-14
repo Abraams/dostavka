@@ -1,0 +1,119 @@
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: @gray;
+	color: @white;
+	font-size: @fz18;
+
+	a {
+		color: @white;
+
+		&:hover {
+			color: @highlight;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__logo {
+		max-width: 260px;
+		margin-right: 120px;
+		@media screen and (max-width: 1200px) {
+			margin-right: 0;
+		}
+		@media screen and (max-width: 768px) {
+			margin-top: 50px;
+		}
+
+		.slogan {
+			display: block;
+			margin-top: 24px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+
+		> .bottom,
+		> .top {
+			display: flex;
+		}
+
+		.top {
+			flex-wrap: wrap;
+			@media screen and (max-width: 768px) {
+				align-items: flex-start;
+			}
+
+			.inner {
+				@media screen and (max-width: 768px) {
+					margin-top: 10px;
+				}
+
+				&__content {
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.bottom {
+			margin-top: 40px;
+
+			.inner__info {
+				> span:not(:first-child) {
+					display: block;
+					margin-top: 8px;
+				}
+			}
+		}
+
+		.inner {
+			&:first-child {
+				margin-right: 24px;
+			}
+
+			&:nth-child(2n) {
+				justify-content: space-between;
+				display: flex;
+				flex-direction: column;
+			}
+
+			&__content {
+				display: flex;
+				align-items: center;
+			}
+
+			&__icon {
+				max-width: 24px;
+				width: 100%;
+				align-self: flex-start;
+			}
+
+			&__info {
+				display: flex;
+				flex-direction: column;
+				margin-left: 24px;
+
+				a[href^='tel']:not(:first-child) {
+					margin-top: 9px;
+				}
+				@media screen @media600 {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+}

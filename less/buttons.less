@@ -1,0 +1,55 @@
+@import "mixins";
+
+button {
+	padding: 0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	.transition_fast;
+
+}
+
+.btn {
+	padding: 9px 30px;
+	max-width: 250px;
+	min-width: 180px;
+	font-size: @fz14;
+	font-weight: 600;
+	border-radius: @global-border-radius;
+	.shadowLight;
+
+	transform: scale(1);
+
+	&:hover {
+		background-color: @highlight;
+		color: @white;
+		.shadowLight_red;
+	}
+	&:active{
+		transform: scale(1.1);
+		transition: .1s;
+	}
+
+	&_white {
+		color: @black;
+		background-color: @white;
+	}
+
+	&_black {
+		color: @white;
+		background-color: @black;
+	}
+
+	&_red {
+		color: @white;
+		background-color: @highlight;
+		.shadowLight_red;
+
+		&:hover {
+			background-color: @white;
+			color: @black;
+			.shadowLight;
+		}
+	}
+}

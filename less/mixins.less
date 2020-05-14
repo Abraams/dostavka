@@ -1,0 +1,40 @@
+// Тени
+
+.shadow {
+	box-shadow: 0 2px 10px fade(@black, 40%);
+}
+
+.shadowLight {
+	box-shadow: 0 2px 10px fade(@black, 25%);
+}
+
+.shadowLight_white {
+	box-shadow: 0 2px 10px fade(@white, 25%);
+}
+
+.shadowLight_red {
+	box-shadow: 0 2px 10px fade(@red, 25%);
+}
+// Бордер радиус
+
+.border {
+	box-shadow: 0 0 1px fade(@black, 25%);
+	.transition;
+
+	&:hover {
+		box-shadow: 0 0 1px fade(@black, 50%);
+	}
+}
+
+.border-radius {
+	border-radius: @global-border-radius;
+}
+// transition
+
+.transition {
+	transition: 0.4s ease-in-out;
+}
+
+.transition_fast {
+	transition: 0.2s ease-in-out;
+}

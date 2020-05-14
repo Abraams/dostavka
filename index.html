@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=no">
+		<!-- meta tags -->
+		<meta name="description" content="Доставка суши в Сертолово">
+		<meta name="keywords" content="Ключевые слова">
+		<!-- OG tags -->
+		<meta property="og:title" content="Имбирь">
+		<meta property="og:description" content="Доставка суши в Сертолово">
+		<meta property="og:image" content="/img/header/logo.png">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="/favicon.png" type="image/png">
+		<!--  -->
+		<title>ИМБИРЬ - Доставка суши в Сертолово</title>
+		<!-- normalize css -->
+		<link rel="stylesheet" type="text/css" href="/css/normalize/normalize.css">
+		<!-- styles min.css -->
+		<link rel="stylesheet" type="text/css" href="/css/modal.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+
+	<body id="index">
+		<div class="page-wrap">
+			<!-- header -->
+			<header class="header ">
+				<div class="container">
+					<nav class="header__nav">
+						<!-- <div class="header__img">
+						<img src="/img/header/logo.png" alt="">
+					</div> -->
+						<ul class="header__menu">
+							<li><a href="#advantages">Преимущества</a></li>
+							<li><a href="#catalog">Меню</a></li>
+							<li><a href="#shares">Акции</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__contacts">
+						<a href="tel:+78129289824" class="header__tel">+7 812-928-98-24</a>
+						<button data-action='modal-1' data-title='1' class="header__btn btn_black btn">Перезвоните
+							мне</button>
+						<button data-action='openCart' class="header__cart-btn">
+							<i><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="446.853px"
+									height="446.853px" viewBox="0 0 446.853 446.853"
+									style="enable-background:new 0 0 446.853 446.853;" xml:space="preserve">
+									<g>
+										<path d="M444.274,93.36c-2.558-3.666-6.674-5.932-11.145-6.123L155.942,75.289c-7.953-0.348-14.599,5.792-14.939,13.708
+								c-0.338,7.913,5.792,14.599,13.707,14.939l258.421,11.14L362.32,273.61H136.205L95.354,51.179
+								c-0.898-4.875-4.245-8.942-8.861-10.753L19.586,14.141c-7.374-2.887-15.695,0.735-18.591,8.1c-2.891,7.369,0.73,15.695,8.1,18.591
+								l59.491,23.371l41.572,226.335c1.253,6.804,7.183,11.746,14.104,11.746h6.896l-15.747,43.74c-1.318,3.664-0.775,7.733,1.468,10.916
+								c2.24,3.184,5.883,5.078,9.772,5.078h11.045c-6.844,7.617-11.045,17.646-11.045,28.675c0,23.718,19.299,43.012,43.012,43.012
+								s43.012-19.294,43.012-43.012c0-11.028-4.201-21.058-11.044-28.675h93.777c-6.847,7.617-11.047,17.646-11.047,28.675
+								c0,23.718,19.294,43.012,43.012,43.012c23.719,0,43.012-19.294,43.012-43.012c0-11.028-4.2-21.058-11.042-28.675h13.432
+								c6.6,0,11.948-5.349,11.948-11.947c0-6.6-5.349-11.948-11.948-11.948H143.651l12.902-35.843h216.221
+								c6.235,0,11.752-4.028,13.651-9.96l59.739-186.387C447.536,101.679,446.832,97.028,444.274,93.36z M169.664,409.814
+								c-10.543,0-19.117-8.573-19.117-19.116s8.574-19.117,19.117-19.117s19.116,8.574,19.116,19.117S180.207,409.814,169.664,409.814z
+								 M327.373,409.814c-10.543,0-19.116-8.573-19.116-19.116s8.573-19.117,19.116-19.117s19.116,8.574,19.116,19.117
+								S337.916,409.814,327.373,409.814z" />
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+							</i>
+						</button>
+					</div>
+				</div>
+			</header>
+			<!-- cart -->
+			<div class="cart _hidden">
+				<div data-action='closeCart' class="cart__bg"></div>
+
+				<form data-type='cart' data-status='disabled' class="cart__window">
+					<h3>
+						Корзина
+					</h3>
+
+					<div data-cart='cart' class="cart__item-list">
+					</div>
+
+					<div class="cart__result">
+						<div data-cart='result' class="cart__result-wrap">
+							<h2>Корзина пуста :(</h2>
+						</div>
+						<div data-cart='form' class="cart__inputs _hidden">
+						</div>
+						<button data-action='enableForm' type="button" class="cart__btn btn_white btn">Оформить
+							заказ</button>
+					</div>
+				</form>
+			</div>
+			<!-- offer -->
+			<section class="offer">
+				<div class="container">
+					<div class="offer__content">
+						<div class="offer__logo">
+							<img src="/img/header/logo.png" alt="">
+						</div>
+						<h1>
+							Ваш вкусный обед и ужин
+							не выходя из дома
+							<br>
+							<span>
+								Доставка суши в Сертолово
+							</span>
+						</h1>
+						<a href="#catalog" class="offer__btn btn_white btn">Смотреть меню</a>
+					</div>
+					<div class="offer__img">
+						<img src="/img/header/offer1.png" alt="">
+					</div>
+				</div>
+			</section>
+			<!-- advantages -->
+			<section id="advantages" class="advantages">
+				<div class="container">
+					<h2>
+						Мы предлагаем Вам
+					</h2>
+					<div class="advantages__wrap">
+						<div class="advantages__item">
+							<div class="advantages__item-img">
+								<img src="/img/icons/basket.svg" alt="">
+							</div>
+							<h3 class="advantages__item-title">
+								Свежие
+								ингредиенты
+							</h3>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__item-img">
+								<img src="/img/icons/delivery.svg" alt="">
+							</div>
+							<h3 class="advantages__item-title">
+								Быстрая
+								доставка
+							</h3>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__item-img">
+								<img src="/img/icons/price.svg" alt="">
+							</div>
+							<h3 class="advantages__item-title">
+								Приятные
+								цены
+							</h3>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__item-img">
+								<img src="/img/icons/menu.svg" alt="">
+							</div>
+							<h3 class="advantages__item-title">
+								Большое
+								меню
+							</h3>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+			<section id="catalog" class="catalog catalog-1">
+				<div class="catalog__bg-wrap">
+					<img src="/img/1.png" alt="">
+					<img src="/img/2.png" alt="">
+					<img src="" alt="">
+					<img src="/img/4.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Маки Роллы
+					</h2>
+					<div data-category='Маки роллы' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-2">
+				<div class="catalog__bg-wrap">
+					<img src="/img/3.png" alt="">
+					<img src="/img/2.png" alt="">
+					<img src="/img/4.png" alt="">
+					<img src="/img/1.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Фирменные роллы
+					</h2>
+					<div data-category='Фирменные роллы' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-3">
+				<div class="catalog__bg-wrap">
+					<img src="/img/2.png" alt="">
+					<img src="/img/1.png" alt="">
+					<img src="/img/4.png" alt="">
+					<img src="/img/3.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Запечённые роллы
+					</h2>
+					<div data-category='Запечённые роллы' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-4">
+				<div class="catalog__bg-wrap">
+					<img src="/img/1.png" alt="">
+					<img src="/img/4.png" alt="">
+					<img src="/img/3.png" alt="">
+					<img src="/img/2.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Наборы
+					</h2>
+					<div data-category='Наборы' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-5">
+				<div class="catalog__bg-wrap">
+					<img src="/img/2.png" alt="">
+					<img src="/img/4.png" alt="">
+					<img src="/img/3.png" alt="">
+					<img src="" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Супы
+					</h2>
+					<div data-category='Супы' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-6">
+				<div class="catalog__bg-wrap">
+					<img src="/img/2.png" alt="">
+					<img src="" alt="">
+					<img src="" alt="">
+					<img src="/img/4.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Салаты
+					</h2>
+					<div data-category='Салаты' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-7">
+				<div class="catalog__bg-wrap">
+					<img src="/img/1.png" alt="">
+					<img src="/img/3.png" alt="">
+					<img src="/img/2.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Пицца
+					</h2>
+					<div data-category='Пицца' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-8">
+				<div class="catalog__bg-wrap">
+					<img src="/img/1.png" alt="">
+					<img src="/img/4.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Десерты
+					</h2>
+					<div data-category='Десерты' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog catalog-9">
+				<div class="catalog__bg-wrap">
+					<img src="/img/2.png" alt="">
+					<img src="/img/1.png" alt="">
+				</div>
+				<div class="container">
+					<h2>
+						Напитки
+					</h2>
+					<div data-category='Напитки' class="catalog__wrap">
+					</div>
+				</div>
+			</section>
+
+			<section id="shares" class="shares">
+				<div class="container">
+					<h2>Акции</h2>
+					<div class="shares__wrap">
+						<div class="shares__img">
+							<img src="img/header/free-delivery.png" alt="">
+						</div>
+						<div class="shares__content">
+							<h2 class="shares__offer">
+								Бесплатная доставка при
+								заказе от 350 рублей<sup>*</sup>
+							</h2>
+							<span>
+								Уточняйте условия у оператора или в нашей группе <a
+									href="https://vk.com/topic-10913838_36290449">ВКонтакте</a>
+							</span>
+							<button data-action='openCart' class="shares__btn btn_red btn">Оформить заказ</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- footer -->
+			<footer id="contacts" class="footer">
+				<div class="container">
+					<h2>Наши контакты</h2>
+					<div class="footer__wrap">
+						<div class="footer__content">
+							<div class="top">
+								<div class="inner">
+									<div class="inner__content">
+										<div class="inner__icon">
+											<img src="/img/icons/phone.png" alt="">
+										</div>
+										<div class="inner__info">
+											<a href="tel:+78129289824">
+												+7 812 928-98-24
+											</a>
+											<a href="tel:+78126449824">
+												+7 812 644-98-24
+											</a>
+											<a href="tel:+79119289824">
+												+7 911 928-98-24
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="inner">
+									<div class="inner__content">
+										<div class="inner__icon">
+											<img src="/img/icons/place.png" alt="">
+										</div>
+										<div class="inner__info">
+											<span>
+												Парковый проезд, дом 5
+											</span>
+										</div>
+									</div>
+									<div class="inner__content">
+										<div class="inner__icon">
+											<img src="/img/icons/vk.png" alt="">
+										</div>
+										<div class="inner__info">
+											<a href="#">imbirdostavkasushi</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<div class="inner">
+									<div class="inner__content">
+										<div class="inner__icon">
+											<img src="/img/icons/time.png" alt="">
+										</div>
+										<div class="inner__info">
+											<span>
+												Мы работаем ежедневно с 11:00 до 23:00
+											</span>
+											<span>
+												Приём заказов производиться до <span class="highlight">22:50</span>
+											</span>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+						<div class="footer__logo">
+							<img src="/img/header/logo.png" alt="">
+							<span class="slogan">
+								Ваш вкусный обед и ужин
+								не выходя из дома
+							</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="modal-1" class="modal d-flex _hidden">
+			<div class="modal__background" data-modal-exit>
+				<span class="modal__exit"></span>
+			</div>
+			<div class="modal__window d-flex">
+				<h2 class="modal__title"></h2>
+				<form data-type='modal' data-metrica-id='send-form' class="modal__form d-flex" action="#!">
+					<input type="hidden" name="massage_subj" value="Заявка с сайта -">
+					<!-- Тема письма -->
+
+					<input type="text" class="modal__field" name="user_name" placeholder="Введите ваше имя">
+					<input type="text" class="modal__field" name="user_phone" placeholder="Введите ваш телефон"
+						required>
+					<p class="modal__paragraph">
+						Отправляя форму, вы соглашаетесь на обработку персональных данных, защищенных политикой
+						конфиденциальности и обрабатываемых для выполнения вашей заявки.
+					</p>
+					<input type="submit" class="modal__btn btn_black btn" value="Отправить">
+				</form>
+			</div>
+		</div>
+		<!--  -->
+		<div id="modal-thx" class="modal _hidden d-flex">
+			<div class="modal__background">
+			</div>
+			<div class="modal__window d-flex">
+				<h2 class="modal__title text _center"></h2>
+			</div>
+		</div>
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- script js -->
+		<script src="/js/menu.js"></script>
+		<script src="/js/modal.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="/js/cart.js"></script>
+		<script src="/js/script.js"></script>
+		<!-- script min.js -->
+		<!-- <script src="/js/script.min.js"></script> -->
+	</body>
+
+</html>
